@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Chronosynclastic Infundibulum &#187; wireless</title>
+	<atom:link href="http://www.semanticoverload.com/tag/wireless/feed/" rel="self" type="application/rss+xml" />
+	<link>http://www.semanticoverload.com</link>
+	<description>The world through my prisms</description>
+	<lastBuildDate>Thu, 07 Apr 2011 17:36:17 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.5</generator>
+		<item>
+		<title>Home Wireless Network without a router</title>
+		<link>http://www.semanticoverload.com/2007/10/25/home-wireless-network-without-a-router/</link>
+		<comments>http://www.semanticoverload.com/2007/10/25/home-wireless-network-without-a-router/#comments</comments>
+		<pubDate>Fri, 26 Oct 2007 00:06:58 +0000</pubDate>
+		<dc:creator>Semantic Overload</dc:creator>
+				<category><![CDATA[internet]]></category>
+		<category><![CDATA[networking]]></category>
+		<category><![CDATA[tutorial]]></category>
+		<category><![CDATA[technology]]></category>
+		<category><![CDATA[wireless]]></category>
+
+		<guid isPermaLink="false">http://semanticoverload.gaddarinc.com/?p=128</guid>
+		<description><![CDATA[Digg this article. Ever wondered if you could get a short-range wireless network (for your home) without a wireless router? Well, it is possible. Here&#8217;s how: Things you need A home computer/laptop with an Ethernet port and wireless card (this computer will then double up as a wireless router). Internet connection that terminates at your [...]]]></description>
+				<content:encoded><![CDATA[<p><a href="http://digg.com/hardware/How_to_set_up_a_Home_Wireless_Network_without_a_router/">Digg this article</a>.</p>
+<p>Ever wondered if you could get a short-range wireless network (for your home) without a wireless router? Well, it is possible. Here&#8217;s how:</p>
+<h3>Things you need</h3>
+<ol>
+<li>A home computer/laptop with an Ethernet port and wireless card (this computer will then double up as a wireless router).</li>
+<li>Internet connection that terminates at your home computer/laptop</li>
+<li>Client computers/laptops with wireless cards</li>
+<li>Note that the instructions here are for Windows XP, other operating systems will probably have similar ways to accomplish what I am giving you instructions for.</li>
+</ol>
+<h3> Basic Idea </h3>
+<p>The basic idea is to set up an ad hoc wireless network among all the computers/laptops so that each one can communicate with the other through the wireless network. Now designate one of the computers as a gateway. The gateway computer is connected to the internet its wired Ethernet connection. Get the gateway to advertise itself as the default internet gateway to all other computer in the ad-hoc network. Now all the computers will start accessing the internet through the gateway computer. Thus the wireless network is established.<br />
+Something like this:<br />
+<img src="http://img.photobucket.com/albums/v92/semanticoverload/adhoc%20wireless/AdhocWirelesssetup.jpg" height="450" alt="Home Wireless Network without a wireless router" /></p>
+<h3> Detailed Instructions</h3>
+<p><span id="more-128"></span></p>
+<ol>
+<li><strong>Configuring your wireless card on the gateway computer</strong></li>
+<p>     Your gateway computer is already connected to the internet using a wired connection. We configure the wireless card on the gateway computer as follows:</p>
+<ul>
+<li>Go to <strong>control panel</strong>, switch to <strong>classic view</strong> and click on <strong>Network Connections</strong>. This should take you to the list of network adapters on your system. Right-click on your <strong>wireless network connection</strong> and select <strong>Properties</strong>.</li>
+<li> Click on <strong>Wireless Networks</strong> tab in the properties window, and it should look something like this:</li>
+<p><img src="http://img.photobucket.com/albums/v92/semanticoverload/adhoc%20wireless/Wirelessprops.jpg" alt="Wireless Networks tab of wireless card" /></p>
+<li> In this tab, click on the <strong>Advanced</strong> button right next to &#8216;<em>Learn about setting up a wireless network configuration</em>&#8216;. You should see a window that looks like this:</li>
+<p><img src="http://img.photobucket.com/albums/v92/semanticoverload/adhoc%20wireless/wirelessadhoconly.jpg" alt="Advaced configuration of wireless networks" /></p>
+<li>Click on <strong>Computer-to-computer (Ad Hoc) networks only</strong>, and then click <strong>Close</strong>.</li>
+<li>You should now be back in the <strong>Wireless Networks</strong> tab of the wireless card <strong>properties</strong> window. Click on <strong>Add</strong> button (to add a new ad hoc network). You should see a window that looks something like this:</li>
+<p><img src="http://img.photobucket.com/albums/v92/semanticoverload/adhoc%20wireless/wirelesscreateadhocAP.jpg" alt="Adding a new ad hoc network" /></p>
+<li>Give you ad hoc network the name that you want. I called it &#8216;Peggy Sue&#8217; in my example. Let the <strong>Network Authentication</strong> be &#8216;<em>open</em>&#8216;. You can configure authentication later, if you want. Then, click <strong>Ok</strong>.</li>
+</ul>
+<li>Configuring the Wired connection on the gateway computer</li>
+<p>             Now you have a ad hoc wireless network, and a connection to the internet. You have to configure them to talk to each other other so that traffic from the ad hoc wireless network can access the internet. You do so by &#8216;sharing&#8217; the internet connection as follows:</p>
+<ul>
+<li>Go to <strong>control panel</strong>, switch to <strong>classic view</strong> and click on <strong>Network Connections</strong>. This should take you to the list of network adapters on your system. Right-click on your <strong>local area connection</strong> and select <strong>Properties</strong>.</li>
+<li>Go to the <strong>Advanced</strong> tab which looks something like this:</li>
+<p><img src="http://img.photobucket.com/albums/v92/semanticoverload/adhoc%20wireless/wirelessshareadhocconnection.jpg" alt="Advanced properties of the LAN connection" /></p>
+<li>Check the box that says &#8216;<em>Allow other network users to connect through this computer&#8217;s internet connection</em>&#8216;. And click <strong>Ok</strong>.</li>
+</ul>
+<p>Now when you right-click on the <strong>wireless network connection</strong> and click on <strong>view wireless networks</strong>, you should see something like this:<br />
+<img src="http://img.photobucket.com/albums/v92/semanticoverload/adhoc%20wireless/wirelessadhoccreated.jpg" alt="list of wireless networks including Peggy Sue" /></p>
+<li> Connecting other wireless clients to the network</li>
+<p>All you now have to do is start up other computers, and connect to the ad hoc wireless network (Peggy Sue) that you just created and you should be good to browse the internet wirelessly!</p>
+</ol>
+]]></content:encoded>
+			<wfw:commentRss>http://www.semanticoverload.com/2007/10/25/home-wireless-network-without-a-router/feed/</wfw:commentRss>
+		<slash:comments>7</slash:comments>
+		</item>
+	</channel>
+</rss>

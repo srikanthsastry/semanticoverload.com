@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Chronosynclastic Infundibulum &#187; imap</title>
+	<atom:link href="http://www.semanticoverload.com/tag/imap/feed/" rel="self" type="application/rss+xml" />
+	<link>http://www.semanticoverload.com</link>
+	<description>The world through my prisms</description>
+	<lastBuildDate>Thu, 07 Apr 2011 17:36:17 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.5</generator>
+		<item>
+		<title>Gmail with IMAP &#8212; First Impressions</title>
+		<link>http://www.semanticoverload.com/2007/11/04/gmail-with-imap-first-impressions/</link>
+		<comments>http://www.semanticoverload.com/2007/11/04/gmail-with-imap-first-impressions/#comments</comments>
+		<pubDate>Mon, 05 Nov 2007 04:56:57 +0000</pubDate>
+		<dc:creator>Semantic Overload</dc:creator>
+				<category><![CDATA[internet]]></category>
+		<category><![CDATA[review]]></category>
+		<category><![CDATA[tutorial]]></category>
+		<category><![CDATA[gmail]]></category>
+		<category><![CDATA[imap]]></category>
+
+		<guid isPermaLink="false">http://semanticoverload.gaddarinc.com/?p=132</guid>
+		<description><![CDATA[Finally, over a week and a half after the initial announcement, IMAP was finally enabled on all my Gmail accounts. Until now I used POP to access my emails from gmail, and had to use the &#8216;recent:&#8217; option to be able to access my emails from multiple locations. With IMAP, thankfully, that will change soon. [...]]]></description>
+				<content:encoded><![CDATA[<p>Finally, over a week and a half after the <a href="http://googleblog.blogspot.com/2007/10/free-imap-for-gmail.html">initial announcement</a>, IMAP was finally enabled on all my <a href="http://www.gmail.com">Gmail</a> accounts. Until now I used POP to access my emails from gmail, and had to use the <a href="http://mail.google.com/support/bin/answer.py?hl=en&#038;answer=47948">&#8216;recent:&#8217; option</a> to be able to access my emails from multiple locations. With IMAP, thankfully, that will change soon.</p>
+<p>A quick intro to <a href="http://www.imap.org/">IMAP</a>. <a href="http://blogs.pcworld.com/staffblog/archives/005772.html">As described by Tom Spring from PC World</a>:</p>
+<blockquote><p>
+<a href="http://www.imap.org/">IMAP</a> is geek speak for Internet Message Access Protocol. &#8230;.<br />
+&#8230; with IMAP any changes (sorting, deleting, reading, or otherwise) are reflected across all Gmail interfaces &#8211; be it using Outlook Express, your iPhone, or Web-based Gmail. For example if you create a folder and sort messages into it using your desktop Outlook Express client those changes show up on Web-based Gmail.
+ </p></blockquote>
+<p>IMAP is a boon for people like me, who check their emails from multiple locations. So I decided to give IMAP support on Gmail a spin, and here&#8217;s what I came up with:</p>
+<p>For starts Gmail has done a remarkable job of supporting IMAP. I can understand the technical difficulty in being able to support IMAP on Gmail. Think about it: Gmail moved away from conventional folder based email organization to offer what is essentially a tag-based (label-based) organization of email (although their tagging interface is too cumbersome in my opinion). Given that IMAP is a folder-based email access protocol, reconciling the two is not an easy task. But Google has done a good job of it this time around.</p>
+<p>For starts, after you <a href="http://mail.google.com/support/bin/answer.py?answer=77695">enable IMAP</a>, and <a href="http://mail.google.com/support/bin/answer.py?answer=75726">configure your mail client</a> there are changes that you will notice in the web-based Gmail interface.</p>
+<ul>
+<li>All the folders that you create using your email client will now appear as labels in your web interface.</li>
+<li>Certain labels like Trash, or Chats are reserved by gmail. If you try to create a folder by that name, then the folder will appear as &#8216;[imap]/foldername&#8217;</li>
+<li>If you have any label of form &#8216;text1/text2&#8242;, they will now appear as folder &#8216;text2&#8242; being a subfolder of folder &#8216;text1&#8242;. So If you have any labels of the form &#8216;family/friend&#8217;, or &#8216;work/spam&#8217;, consider renaming them without a &#8216;/&#8217; before enabling IMAP.</li>
+</ul>
+<p>So how did tag-based Gmail reconcile with folder-based IMAP?</p>
+<ul>
+<li>Each label appears as a separate folder in IMAP. </li>
+<li>To apply multiple labels, just copy the email to multiple folders. </li>
+<li>Moving an email from one folder to another will change the label on the email from the first label to the other.</li>
+<li>If you move an email to a sub-folder &#8216;sub&#8217; within a main folder &#8216;main&#8217;, on the web interface, it will show up as being labeled &#8216;main/sub&#8217;.</li>
+<li>If you configure you mail client to sent email using gmail&#8217;s smtp server, then every copy of the email is stoed in the &#8216;[Gmail]/Sent Mail&#8217; folder.</li>
+</ul>
+<p><a href="http://mail.google.com/support/bin/answer.py?answer=77657">Here</a> are the set of IMAP actions and their corresponding web based Gmail actions.</p>
+<p>Spam, however, is handled differently. To mark a message as spam, just move it to the &#8216;[gmail]/spam&#8217; folder in the IMAP interface. Simply marking the email as &#8216;spam&#8217; on your mail client (like Thunderbird) will trigger the email client&#8217;s spam filters, but not Gmail&#8217;s.</p>
+<h3>Drawbacks</h3>
+<ul>
+<li>One <del>The only</del> major drawback is that the IMAP&#8217;s default trash folder is different from Gmail&#8217;s Trash folder. There&#8217;s no easy way to fix it. <a href="http://www.techsamurai.net/entry/11/changing-thunderbirds-default-trash-folder">The only fix that I found to work for Thunderbird is here on Tech Samurai</a>. It not the most straight forward config change to make Thunderbird to GMail&#8217;s Trash folder.
+</li>
+<li> The bigger issue with the simulation of folder-based structure on top of tag-based structure is the following:<br />
+If an email has multiple tags (labels) associated with it, then the email shows up in multiple folders on the IMAP client. &#8216;Deleting&#8217; such an email involves deleting (or moving to [Gmail]/Trash) all the virtual copies of the email from all the folders where they reside. This can be a arduous task, especially if do not know all the labels that were applied to the message to begin with (and you dont, if you are using the IMAP interface exclusively.
+</li>
+</ul>
+<p>Overall, a really clean and neat implementation on Google&#8217;s part. Good job Google!</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.semanticoverload.com/2007/11/04/gmail-with-imap-first-impressions/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

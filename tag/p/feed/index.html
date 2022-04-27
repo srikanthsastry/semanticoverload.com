@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Chronosynclastic Infundibulum &#187; P</title>
+	<atom:link href="http://www.semanticoverload.com/tag/p/feed/" rel="self" type="application/rss+xml" />
+	<link>http://www.semanticoverload.com</link>
+	<description>The world through my prisms</description>
+	<lastBuildDate>Thu, 07 Apr 2011 17:36:17 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.5</generator>
+		<item>
+		<title>On P versus NP, layperson&#8217;s edition</title>
+		<link>http://www.semanticoverload.com/2010/08/09/on-p-versus-np-laypersons-edition/</link>
+		<comments>http://www.semanticoverload.com/2010/08/09/on-p-versus-np-laypersons-edition/#comments</comments>
+		<pubDate>Mon, 09 Aug 2010 23:42:59 +0000</pubDate>
+		<dc:creator>Semantic Overload</dc:creator>
+				<category><![CDATA[mathematics]]></category>
+		<category><![CDATA[philosophy]]></category>
+		<category><![CDATA[science]]></category>
+		<category><![CDATA[NP]]></category>
+		<category><![CDATA[P]]></category>
+		<category><![CDATA[P vs. NP]]></category>
+		<category><![CDATA[Vinay Deolalikar]]></category>
+
+		<guid isPermaLink="false">http://www.semanticoverload.com/?p=654</guid>
+		<description><![CDATA[Recently, slashdot went berserk with Vinay Deolalikar&#8217;s manuscript (in progress) that claims P is not equal to NP. For a detailed generalist&#8217;s explanation of the P vs. NP problem, check out MIT&#8217;s website. Now many of you might ask &#8220;WTF is P, NP, and why should I care?&#8221; I am here to tell you that [...]]]></description>
+				<content:encoded><![CDATA[<p>Recently, <a title="Slashdot post:  Claimed Proof That P != NP" href="http://science.slashdot.org/story/10/08/08/226227/Claimed-Proof-That-P--NP">slashdot went berserk</a> with V<a title="Deolalikar's paper on P != NP" href="http://www.hpl.hp.com/personal/Vinay_Deolalikar/Papers/pnp12pt.pdf">inay Deolalikar&#8217;s manuscript</a> (in progress) that claims <a title="Clay Institute's description of P vs NP Problem" href="ttp://www.claymath.org/millennium/P_vs_NP/">P is not equal to NP</a>. For a detailed generalist&#8217;s explanation of the P vs. NP problem, check out <a href="http://web.mit.edu/newsoffice/2009/explainer-pnp.html">MIT&#8217;s website</a>. Now many of you might ask &#8220;<em>WTF is P, NP, and why should I care?</em>&#8221; I am here to tell you that whoever you may be, you should care about it, and I will explain why.</p>
+<p>Here are links to various sections of the post, so that readers familiar with certain topics can skip them:<a name="top"></a></p>
+<ol>
+<li><a href="index.html#definition">Definitions of P and NP</a></li>
+<li><a href="index.html#good">If P=NP, the good</a></li>
+<li><a href="index.html#bad">If P=NP, the bad</a></li>
+<li><a href="index.html#ugly">If P=NP, the ugly (philosophical implications)</a></li>
+<li><a href="index.html#irrelevant">If P=NP, the irrelevant</a></li>
+</ol>
+<h3><a name="definition">Definitions of P and NP</a></h3>
+<p>First, let&#8217;s start with definitions. What is P and NP? These are terms from computer science that refer to difficulty of solving certain problems. At the risk of oversimplification, P refers to the class of problems that are &#8216;easy&#8217; to solve (<a title="Wikipedia article on the complecity class P" href="http://en.wikipedia.org/wiki/P_%28complexity%29">wikipedia has a more detailed explanation</a>). Examples include addition, multiplication, finding shortest path from city A to city B, and so on. NP refers to the class of problems whose solutions are &#8216;easy&#8217; to verify (but solving the problem need not be easy). For example, consider the game of <a title="Sudoku on wikipedia" href="http://en.wikipedia.org/wiki/Sudoku">Sudoku</a>: while solving large Sudoku puzzles takes a lot of skill, given a filled-out Sudoku board, it is a fairly easy job to verify whether or not the board has been filled out correctly. This is an example of an NP problem (<a title="Wikipedia article on the complecity class NP" href="http://en.wikipedia.org/wiki/NP_%28complexity%29">wikipedia article on NP</a>). Note that all problems in P are also in NP.</p>
+<p>Here I have to pause and emphasize that &#8216;easy&#8217; in computer science doesn&#8217;t mean easy in the vernacular sense, or at times, even in practice. Please read the wikipedia articles on <a title="Wikipedia article on the complecity class P" href="http://en.wikipedia.org/wiki/P_%28complexity%29">P</a> and <a title="Wikipedia article on the complecity class NP" href="http://en.wikipedia.org/wiki/NP_%28complexity%29">NP</a> for a more detailed explanation.</p>
+<p>The outstanding problem of our times in Computer Science is whether every problem in NP is also in P. That is, given a problem whose solution can be <em>easily verified</em>, can the solution be <em>easily found</em> as well? The Clay Mathematical Institute is even offering <a title="Millennium Prize" href="http://www.claymath.org/millennium/">$1M to anyone who can solve it</a>! Naturally, there have been <a title="Attempts at solvign P Vs. NP" href="http://www.win.tue.nl/~gwoegi/P-versus-NP.htm">several (unsuccessful) attempts</a>, <a title="Scott Aaronson on P vs. NP" href="http://www.scottaaronson.com/blog/?p=122">several</a> <a title="Avi Wigderson on P and NP problems: video" href="http://video.ias.edu/stream&amp;ref=201">views</a> on the <a href="http://cacm.acm.org/magazines/2009/9/38904-the-status-of-the-p-versus-np-problem/fulltext">subject</a>.</p>
+<p>Great! So it is a problem for computer scientists, why should you care? To answer that question, let us look at the consequences for both P =NP and P != NP. [<a href="index.html#top">Back to top</a>]</p>
+<h3><a name="good">If P=NP, the good</a></h3>
+<p>If P=NP, then you could live in a potential utopia. Why? Because may challenging problems in science and technology are in NP and being able to solve them &#8220;efficiently&#8221; will pave way for things like a very quick understanding of our genome and protein folding. It will enable postal and courier services to schedule and route our packages is the most efficient way possible to minimize their costs and potentially passing the saving on to us. This can enable huge franchise stores like Walmart, Bestbuy, McDonalds, and other&#8217;s to manage their logistics so efficiently that 99c for a burger and $500 for a laptop could seem like price gouging! And these are just two examples of many, many more! Great, right! So we&#8217;d ideally want P to be equal to NP, right? [<a href="index.html#top">Back to top</a>]</p>
+<h3><a name="bad">If P = NP, the bad</a></h3>
+<p>Well, there&#8217;s a dark side to this as well. See, as it turns out many of the &#8220;secure&#8221; encryptions in use today make use of a problem that is known to be in NP but no efficient solution for it exists. This problem is that of factorization. Given the candidate factors for a given number, it is easy to verify if they multiply to given you that number. If for large numbers, it is currently very difficult to find factors. If P = NP, then it is only a matter of time before factorization becomes easy, and all your credit card data, your usernames and passwords, your back account details, practically everything you thought was secure is available to anyone! Cryptography as we know it is dead! Of course, I am sure other methods of cryptography will be invented, but until then, our secrets are all sitting ducks! [<a href="index.html#top">Back to top</a>]</p>
+<h3><a name="ugly">If P =NP, the ugly</a></h3>
+<p>Unfortunately, that&#8217;s the least of the our problems if P =NP! Can you think of anything that is easy to verify but difficult to solve? How about golf? How about Tiger Wood&#8217;s ability to play those amazing shots when everyone else around him, despite their best training and skill, can&#8217;t seem to match his genius? While we all can verify that Tiger Wood&#8217;s golfing shots are masterly, verify few of us can really accomplish the same thing. That is, we can verify if someone is a genius very efficiently, but we can&#8217;t be geniuses ourselves very efficiently or quickly. So philosophically speaking, if P was equal to NP, then if we can appreciate a genius, then we can become one! That would reduce a genius to an average person and elevate and average person to a genius! That leaves little to wonder about creativity. Anyone who can appreciate <a title="Joe Satriani's home page" href="http://www.satriani.com/">Joe Satriani</a> could become a master guitarists &#8220;easily&#8221;! How dull would that world be!</p>
+<p>Here&#8217;s another &#8216;issue&#8217;: How may of you can come up with a new proof for the <a href="http://en.wikipedia.org/wiki/Pythagorean_theorem">Pythagoras&#8217; Theorem</a>? How many of you can verify that a given proof for the Pythagoras&#8217; Theorem is correct? See, as it turns out, verifying a proof, even for many complex claims and assertions, is much easier than actually coming with a proof. So &#8216;<a href="http://en.wikipedia.org/wiki/Automated_theorem_proving">theorem proving</a>&#8216;, as it is called, is in NP, and <a href="http://en.wikipedia.org/wiki/Proof_verification">proof verification</a> is in P. But if P were equal to NP, we all could be mathematicians, physicists, and scientists and prove everything (that can proven within a reasonable amount to space, say a few hundred pages). In fact, we could even write a computer program to prove everything about the world. Not only would all of us eventually be out of a job because computer and robots would be able to do everything, even our lives would be boring and depressing because there are no intellectual pursuits left. Computers have solved everything we care about. That would make the entire universe a very dull place, philosophically speaking.</p>
+<p>So I am really looking forward to the claim that P is not equal to NP actually being true! [<a href="index.html#top">Back to top</a>]</p>
+<h3><a name="irrelevant">If P=NP, the irrelevant</a></h3>
+<p>Ok, maybe I am being a little hyperbolic over this, because there are still many problems that are not only difficult to solve, they are even difficult to verify. Lets take chess as an example.</p>
+<p>Given a Chess board in the middle of a game, and it was black&#8217;s move. If I told you that &#8220;bishop to C6&#8243; is the best move to make, would you be able to verify it quickly? Maybe if it was near the ending, but in the middle of the game, it is very difficult to verify it! Why? Because Chess is even more difficult than NP. So rest assured, even if P=NP, it will still be a while before a computer beats humanity at chess.</p>
+<p>But it does bring up an interesting question. Are there multiple levels of creativity? Is there one kind of creativity that allows us to recognize geniuses when we see them because we, as non-geniuses, can verify their creativity quickly (the kind of creativity that is in NP), and another kind of creativity that we cannot even verify efficiently? What does that even mean? Should we just have to take the creative person&#8217;s word for it that what he/she produces is, in fact, creative, and that they are indeed geniuses?</p>
+<p>I would love your opinions on it.<br />
+[<a href="index.html#top">Back to top</a>]</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.semanticoverload.com/2010/08/09/on-p-versus-np-laypersons-edition/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+	</channel>
+</rss>
